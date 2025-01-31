@@ -1,3 +1,5 @@
+#more compelx solution using dictionaries
+
 numbers = [int(num) for num in input().split(", ")]
 beggars_count = int(input())
 beggars_results = {}
@@ -27,3 +29,16 @@ for key, value in beggars_results.items():
     list_result.append(sum(value))
 
 print(list_result)
+
+
+#easier solution using lists only
+
+numbers = [int(num) for num in  input().split(', ')]
+beggars = int(input())
+
+beggars_list = [0] * beggars
+
+for i, num in enumerate(numbers):
+    beggars_list[i % beggars] += num
+
+print(beggars_list)
