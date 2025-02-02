@@ -11,7 +11,7 @@ divisor = int(input())
 boundary = int(input())
 result = 0
 
-for num in range(boundary +1 ):
+for num in range(boundary + 1):
     if num % divisor == 0 and num <= boundary:
         result = num
 
